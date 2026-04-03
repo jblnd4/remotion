@@ -1,4 +1,5 @@
 import {alias} from 'lib/alias';
+import {TrochoidalMilling} from './TrochoidalMilling';
 import React, {useCallback, useMemo} from 'react';
 import {
 	CalculateMetadataFunction,
@@ -1920,6 +1921,14 @@ export const Index: React.FC = () => {
 				height={720}
 				fps={30}
 				durationInFrames={2 * 60 * 30}
+			/>
+			<Composition
+				id="TrochoidalMilling"
+				component={TrochoidalMilling}
+				width={1280}
+				height={720}
+				fps={30}
+				durationInFrames={960}
 			/>
 		</>
 	);
